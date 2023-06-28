@@ -34,7 +34,7 @@ namespace api_desafio21dias
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "api_desafio21dias", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Primeira WebApi", Version = "v1", Description = "Treinamento Massa de API com o Danilo Aparecido" });
             });
         }
 

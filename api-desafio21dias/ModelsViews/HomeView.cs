@@ -10,10 +10,13 @@ namespace api_desafio21dias.ModelsViews
 
         public List<dynamic> Endpoints => new List<dynamic>() {
             new {
-               Item = new { Documentacao = "/swagger" },
-            },
+             Documentacao = "/swagger" },            
             new { 
-                Item = new { Path = "/alunos" }
+                Itens = new List<dynamic>() { 
+                    new { Path = "/alunos" },
+                    new { Path = "/fornecedores"}
+                },
+              
             }
         };
     }

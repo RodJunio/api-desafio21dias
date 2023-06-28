@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace api_desafio21dias.Models
 {
@@ -11,12 +12,16 @@ namespace api_desafio21dias.Models
         public int Id { get; set; }
 
         [Column("nome_fantasia")]
+        [Required]
+        [JsonPropertyName("nome")]
         public string NomeFantasia { get; set; }
 
         [Column("razao")]
         public string RazaoSocial { get; set; }
 
         [Column("cpf_cnpj")]
+        [Required]
+        [JsonIgnore]
         public string Cpf_Cnpj { get; set; }
 
         [NotMapped]
