@@ -1,5 +1,6 @@
 ﻿using api_desafio21dias.Models;
 using api_desafio21dias.Servicos;
+using EntityFrameworkPaginateCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace api_desafio21dias.Controllers
     public class AlunosController : ControllerBase
     {
         private readonly DbContexto _context;
+        private const int QUANTIDADE_POR_PAGINA = 3;
 
         public AlunosController(DbContexto context)
         {
@@ -20,9 +22,10 @@ namespace api_desafio21dias.Controllers
         // GET: /alunos
         [HttpGet]
         [Route("/alunos")]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
-            return StatusCode(200, await _context.Alunos.ToListAsync());
+            
+            return StatusCode(200, await _context.Alunos.OrderBy(a => a.Id).PaginateAsync(page, QUANTIDADE_POR_PAGINA));
         }
 
         // GET: /alunos/5
