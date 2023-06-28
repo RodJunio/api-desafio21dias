@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-desafio21dias", "api-desafio21dias\api-desafio21dias.csproj", "{122BBD3D-F495-4B8E-BCA1-97A68051406A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{122BBD3D-F495-4B8E-BCA1-97A68051406A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{122BBD3D-F495-4B8E-BCA1-97A68051406A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{122BBD3D-F495-4B8E-BCA1-97A68051406A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{122BBD3D-F495-4B8E-BCA1-97A68051406A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {143BF12B-A1DE-4072-92E1-290160771598}
+	EndGlobalSection
+EndGlobal
