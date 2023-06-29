@@ -1,4 +1,11 @@
-﻿# Comandos iniciais:
+﻿# Base de dados:
+#### Para utilizar a aplicação com o banco de dados estou disponibilizando o script de Create que está no arquivo estrutura.sql(pasta estrutura) do projeto. 
+
+``` bash
+ls estrutura
+```
+
+# Comandos iniciais:
 ``` bash
   mkdir api-desafio21dias-materiais
   cd api-desafio21dias-materiais
