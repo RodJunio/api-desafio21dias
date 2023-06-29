@@ -25,7 +25,7 @@ namespace api_desafio21dias.Controllers
         public async Task<IActionResult> Index(int page = 1)
         {
             
-            return StatusCode(200, await _context.Alunos.OrderBy(a => a.Id).PaginateAsync(page, QUANTIDADE_POR_PAGINA));
+            return StatusCode(200, await _context.Alunos.OrderByDescending(a => a.Id).PaginateAsync(page, QUANTIDADE_POR_PAGINA));
         }
 
         // GET: /alunos/5
